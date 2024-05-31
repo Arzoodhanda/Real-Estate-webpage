@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Search Engine</title>
+    <style>
+        /* Your CSS styles here */
+       .property {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="search-input" placeholder="Search by location, price, or type...">
+    <button onclick="searchProperties()">Search</button>
+    <div id="properties-container">
+        <!-- Your properties here -->
+        <div class="property" data-location="New York" data-price="1000000" data-type="Apartment">
+            <h3>Apartment in New York</h3>
+            <p>Price: $1,000,000</p>
+        </div>
+        <div class="property" data-location="Los Angeles" data-price="2000000" data-type="House">
+            <h3>House in Los Angeles</h3>
+            <p>Price: $2,000,000</p>
+        </div>
+        <div class="property" data-location="San Francisco" data-price="3000000" data-type="Condo">
+            <h3>Condo in San Francisco</h3>
+            <p>Price: $3,000,000</p>
+        </div>
+    </div>
+
+    <script>
+        function searchProperties() {
+            const searchInput = document.getElementById('search-input');
+            const searchQuery = searchInput.value.toLowerCase();
+            const propertiesContainer = document.getElementById('properties-container');
+            const properties = propertiesContainer.getElementsByClassName('property');
+
+            for (let i = 0; i < properties.length; i++) {
+                const property = properties[i];
+                const location = property.dataset.location.toLowerCase();
+                const price = property.dataset.price;
+                const type = property.dataset.type.toLowerCase();
+
+                if (location.includes(searchQuery) || price.includes(searchQuery) || type.includes(searchQuery)) {
+                    property.style.display = 'block';
+                } else {
+                    property.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

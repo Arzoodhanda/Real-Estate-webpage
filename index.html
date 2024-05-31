@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arzoo Dhanda</title>
+
+  
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:arzoodhandaa@gmail.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>arzoodhandaa@gmail.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+
+
+              <address>15/A, Nest Tower, NYC</address>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <button onclick="changeLanguage('es')" style="color: white; font-size: 15px;">Spanish</button>
+              
+            </li>
+
+            <li>
+              <button onclick="changeLanguage('en')" style="color: white; font-size: 15px;">English</button>
+            </li>
+
+          </ul>
+<!--
+          <div class="language-selector">
+    
+            <select name="language">
+              <option value="en" selected>English</option>
+              <option value="es">Spanish</option>
+            </select>
+          </div>
+          -->
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="#" class="logo" style="font-size: 30px; color: black; font-weight: bold;">
+          Arzoo Dhanda
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo" style="font-size: 30px; color: black; font-weight: bold;">
+              Arzoo Dhanda
+            </a>
+    
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link"id="english-paragraph3"  data-nav-link>Home</a>
+                <a href="#home" class="navbar-link" id="spanish-paragraph3" style="display:none;" data-nav-link> Hogar</a>
+               
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" id="english-paragraph4"  data-nav-link>About</a>
+                <a href="#about" class="navbar-link" id="spanish-paragraph4" style="display:none;" data-nav-link>Acerca de</a>
+                
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" id="english-paragraph5"  data-nav-link>Service</a>
+                <a href="#service" class="navbar-link" id="spanish-paragraph5" style="display:none;" data-nav-link>Servicio</a>
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" id="english-paragraph6"  data-nav-link>Property</a>
+                <a href="#property" class="navbar-link" id="spanish-paragraph6" style="display:none;" data-nav-link>Propiedad</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" id="english-paragraph7" data-nav-link>Contact</a>
+                <a href="#contact" class="navbar-link" id="spanish-paragraph7" style="display:none;" data-nav-link>Contacto</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="header-bottom-actions">
+          
+          <!--
+
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>-->
+
+          <button class="header-bottom-actions-btn" aria-label="Profile" onclick="changeCurrency('EUR')">
+            <ion-icon name="logo-euro"></ion-icon>
+            <!--<ion-icon name="person-outline"></ion-icon>-->
+
+            <span>Profile</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Cart" onclick="changeCurrency('USD')">
+            <ion-icon name="logo-usd"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+         
+         
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+          
+ 
+
+          <div class="hero-content content">
+
+            <p class="hero-subtitle">
+              <ion-icon name="home"></ion-icon>
+
+              <span id="english-paragraph1">Real Estate Agency</span>
+              <span style="display:none;" id="spanish-paragraph1">Agencia Inmobiliaria</span>
+              
+            </p>
+
+            <h1 class="h1 hero-title" id="english-title">Find Your Dream House By Us</h1>
+            
+    
+
+            <p class="hero-text" id="english-paragraph">
+              For more than a decade, we’ve served dedicatedly making your property dreams come true in Dubai. Let’s find your perfect space together..
+            </p>
+
+
+            <h1 class="h1 hero-title" id="spanish-title" style="display:none;" >Encuentra la casa de tus sueños por nosotras</h1>
+            <p class="hero-text" id="spanish-paragraph" style="display:none;">Durante más de una década, hemos trabajado con dedicación para hacer realidad la propiedad de sus sueños en Dubái. Encontremos juntos tu espacio perfecto.</p>
+            
+
+            <button class="btn" id="english-paragraph2">Make An Enquiry</button>
+            <button class="btn" id="spanish-paragraph2" style="display:none;">realizar una consulta</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+
+      <section>
+        <div class="container">
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search by location, price, or type...">
+            <button onclick="searchProperties()">Search</button>
+        </div>
+        </div>
+      </section>
+
+      <section class="service" id="service" style="background-color: white;">
+        <div class="container">
+
+          <p class="section-subtitle">Our Services</p>
+
+          <h2 class="h2 section-title">Our Main Focus</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#" id="english-paragraph11">Buy a home</a>
+                  <a href="#" id="spanish-paragraph11" style="display:none;">comprar una casa</a>
+                </h3>
+
+                <p class="card-text" id="english-paragraph8">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+                <p class="card-text" id="spanish-paragraph8" style="display:none;">Con más de 1 millón de casas en venta disponibles en el sitio web, podemos encontrarle una casa a la que querrá llamar hogar.</p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#" id="english-paragraph12">Rent a home</a>
+                  <a href="#" id="spanish-paragraph12" style="display:none;">alquilar una casa</a>
+                </h3>
+
+                <p class="card-text" id="english-paragraph9">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+                <p class="card-text" id="spanish-paragraph9" style="display:none;">Con más de 1 millón de casas en venta disponibles en el sitio web, podemos encontrarle una casa a la que querrá llamar hogar.</p>
+
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#" id="english-paragraph13">Sell a home</a>
+                  <a href="#" id="spanish-paragraph13" style="display:none;">vender una casa</a>
+                </h3>
+
+                <p class="card-text" id="english-paragraph10">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+                <p class="card-text" id="spanish-paragraph10" style="display:none;">Con más de 1 millón de casas en venta disponibles en el sitio web, podemos encontrarle una casa a la que querrá llamar hogar.</p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+
+      <section class="property" id="properties-container">
+        <div class="container">
+
+          <p class="section-subtitle">Properties</p>
+
+          <h2 class="h2 section-title">Featured Listings</h2>
+
+          <ul class="property-list has-scrollbar">
+
+            <li>
+              <div class="property-card property1" data-location="New York" data-price="1000000" data-type="Apartment">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong class="price" data-price="34900.00">$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" id="english-paragraph16">New Apartment Nice View</a>
+                    <a href="#" id="spanish-paragraph16" style="display: none;">Apartamento Nuevo Bonita Vista</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="Arzoo Dhanda" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Arzoo Dhanda</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card property1" data-location="Los Angeles" data-price="2000000" data-type="House">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+                  </a>
+
+                  <div class="card-badge orange">For Sales</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong class="price" data-price="38900.00">$38,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" id="english-paragraph17">Modern Apartment</a>
+                    <a href="#" id="spanish-paragraph17" style="display: none;">Apartamento moderno</a>
+                  </h3>
+
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="Arzoo Dhanda" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Arzoo Dhanda</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card property1" data-location="San Francisco" data-price="3000000" data-type="Condo">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong class="price" data-price="31400.00">$31,400</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    
+                    <a href="#" id="english-paragraph18">Comfortable Apartment</a>
+                    <a href="#" id="spanish-paragraph18" style="display: none;">Cómodo apartamento</a>
+                  </h3>
+
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="Arzoo Dhanda" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Arzoo Dhanda</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card property1" data-location="toronto" data-price="4000000" data-type="Canda">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong class="price" data-price="45500.00">$45,500</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    
+                    <a href="#" id="english-paragraph19">Luxury villa in Rego Park</a>
+                    <a href="#" id="spanish-paragraph19" style="display: none;">Villa de lujo en Rego Park</a>
+                  </h3>
+
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="Arzoo Dhanda" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">Arzoo Dhanda</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+     
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title" id="english-paragraph14">Looking for a dream home?</h2>
+              <h2 class="h2 card-title" style="display:none;" id="spanish-paragraph14">¿Busca la casa de sus sueños?</h2>
+              
+
+              <p class="card-text" id="english-paragraph15">We can help you realize your dream of a new home</p>
+              <p class="card-text" style="display:none;" id="spanish-paragraph15">Podemos ayudarle a hacer realidad su sueño de un nuevo hogar.</p>
+            </div>
+
+            <button class="btn cta-btn">
+              <span>Explore Properties</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo" style="font-size: 30px; color: white; font-weight: bold;">
+            Arzoo Dhanda
+          </a>
+  
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Arzoo Dhanda</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+73275858" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+73275858</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:arzoodhandaa@gmail.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>arzoodhandaa@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">Arzoo Dhanda</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+  <!--language change-->
+  
+  <script>
+    function changeLanguage(language) {
+        if (language === 'es') {
+            document.querySelector('#english-title').style.display = 'none';
+            document.querySelector('#english-paragraph').style.display = 'none';
+            document.querySelector('#english-paragraph1').style.display = 'none';
+            document.querySelector('#english-paragraph2').style.display = 'none';
+            document.querySelector('#english-paragraph3').style.display = 'none';
+            document.querySelector('#english-paragraph4').style.display = 'none';
+            document.querySelector('#english-paragraph5').style.display = 'none';
+            document.querySelector('#english-paragraph6').style.display = 'none';
+            document.querySelector('#english-paragraph7').style.display = 'none';
+            document.querySelector('#english-paragraph8').style.display = 'none';
+            document.querySelector('#english-paragraph9').style.display = 'none';
+            document.querySelector('#english-paragraph10').style.display = 'none';
+            document.querySelector('#english-paragraph11').style.display = 'none';
+            document.querySelector('#english-paragraph12').style.display = 'none';
+            document.querySelector('#english-paragraph13').style.display = 'none';
+            document.querySelector('#english-paragraph14').style.display = 'none';
+            document.querySelector('#english-paragraph15').style.display = 'none';
+            document.querySelector('#english-paragraph16').style.display = 'none';
+            document.querySelector('#english-paragraph17').style.display = 'none';
+            document.querySelector('#english-paragraph18').style.display = 'none';
+            document.querySelector('#english-paragraph19').style.display = 'none';
+
+
+
+
+            document.querySelector('#spanish-title').style.display = 'block';
+            document.querySelector('#spanish-paragraph').style.display = 'block';
+            document.querySelector('#spanish-paragraph1').style.display = 'block';
+            document.querySelector('#spanish-paragraph2').style.display = 'block';
+            document.querySelector('#spanish-paragraph3').style.display = 'block';
+            document.querySelector('#spanish-paragraph4').style.display = 'block';
+            document.querySelector('#spanish-paragraph5').style.display = 'block';
+            document.querySelector('#spanish-paragraph6').style.display = 'block';
+            document.querySelector('#spanish-paragraph7').style.display = 'block';
+            document.querySelector('#spanish-paragraph8').style.display = 'block';
+            document.querySelector('#spanish-paragraph9').style.display = 'block';
+            document.querySelector('#spanish-paragraph10').style.display = 'block';
+            document.querySelector('#spanish-paragraph11').style.display = 'block';
+            document.querySelector('#spanish-paragraph12').style.display = 'block';
+            document.querySelector('#spanish-paragraph13').style.display = 'block';
+            document.querySelector('#spanish-paragraph14').style.display = 'block';
+            document.querySelector('#spanish-paragraph15').style.display = 'block';
+            document.querySelector('#spanish-paragraph16').style.display = 'block';
+            document.querySelector('#spanish-paragraph17').style.display = 'block';
+            document.querySelector('#spanish-paragraph18').style.display = 'block';
+            document.querySelector('#spanish-paragraph19').style.display = 'block';
+
+
+        } else {
+            document.querySelector('#english-title').style.display = 'block';
+            document.querySelector('#english-paragraph').style.display = 'block';
+            document.querySelector('#english-paragraph1').style.display = 'block';
+            document.querySelector('#english-paragraph2').style.display = 'block';
+            document.querySelector('#english-paragraph3').style.display = 'block';
+            document.querySelector('#english-paragraph4').style.display = 'block';
+            document.querySelector('#english-paragraph5').style.display = 'block';
+            document.querySelector('#english-paragraph6').style.display = 'block';
+            document.querySelector('#english-paragraph7').style.display = 'block';
+            document.querySelector('#english-paragraph8').style.display = 'block';
+            document.querySelector('#english-paragraph9').style.display = 'block';
+            document.querySelector('#english-paragraph10').style.display = 'block';
+            document.querySelector('#english-paragraph11').style.display = 'block';
+            document.querySelector('#english-paragraph12').style.display = 'block';
+            document.querySelector('#english-paragraph13').style.display = 'block';
+            document.querySelector('#english-paragraph14').style.display = 'block';
+            document.querySelector('#english-paragraph15').style.display = 'block';
+            document.querySelector('#english-paragraph16').style.display = 'block';
+            document.querySelector('#english-paragraph17').style.display = 'block';
+            document.querySelector('#english-paragraph18').style.display = 'block';
+            document.querySelector('#english-paragraph19').style.display = 'block';
+
+
+            document.querySelector('#spanish-title').style.display = 'none';
+            document.querySelector('#spanish-paragraph').style.display = 'none';
+            document.querySelector('#spanish-paragraph1').style.display = 'none';
+            document.querySelector('#spanish-paragraph2').style.display = 'none';
+            document.querySelector('#spanish-paragraph3').style.display = 'none';
+            document.querySelector('#spanish-paragraph4').style.display = 'none';
+            document.querySelector('#spanish-paragraph5').style.display = 'none';
+            document.querySelector('#spanish-paragraph6').style.display = 'none';
+            document.querySelector('#spanish-paragraph7').style.display = 'none';
+            document.querySelector('#spanish-paragraph8').style.display = 'none';
+            document.querySelector('#spanish-paragraph9').style.display = 'none';
+            document.querySelector('#spanish-paragraph10').style.display = 'none';
+            document.querySelector('#spanish-paragraph11').style.display = 'none';
+            document.querySelector('#spanish-paragraph12').style.display = 'none';
+            document.querySelector('#spanish-paragraph13').style.display = 'none';
+            document.querySelector('#spanish-paragraph14').style.display = 'none';
+            document.querySelector('#spanish-paragraph15').style.display = 'none';
+            document.querySelector('#spanish-paragraph16').style.display = 'none';
+            document.querySelector('#spanish-paragraph17').style.display = 'none';
+            document.querySelector('#spanish-paragraph18').style.display = 'none';
+            document.querySelector('#spanish-paragraph19').style.display = 'none';
+        }
+    }
+</script>
+
+
+
+<script>
+  function changeCurrency(currency) {
+      const usdPrice = 100.00;
+      const eurPrice = usdPrice * 0.82; // Approximate exchange rate
+
+      const prices = document.querySelectorAll('.price');
+
+      prices.forEach((price) => {
+          if (currency === 'EUR') {
+              const priceValue = parseFloat(price.dataset.price);
+              price.innerText = `€${(priceValue * 0.82).toFixed(2)}`;
+          } else {
+              const priceValue = parseFloat(price.dataset.price);
+              price.innerText = `$${priceValue.toFixed(2)}`;
+          }
+      });
+  }
+</script>
+
+
+<script>
+  function searchProperties() {
+      const searchInput = document.getElementById('search-input');
+      const searchQuery = searchInput.value.toLowerCase();
+      const propertiesContainer = document.getElementById('properties-container');
+      const properties = propertiesContainer.getElementsByClassName('property1');
+
+      for (let i = 0; i < properties.length; i++) {
+          const property = properties[i];
+          const location = property.dataset.location.toLowerCase();
+          const price = property.dataset.price;
+          const type = property.dataset.type.toLowerCase();
+
+          if (location.includes(searchQuery) || price.includes(searchQuery) || type.includes(searchQuery)) {
+              property.style.display = 'block';
+          } else {
+              property.style.display = 'none';
+          }
+      }
+  }
+</script>
+
+
+
+</body>
+
+</html>
